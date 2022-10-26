@@ -1,0 +1,5 @@
+更新git信息：
+把所有代码都添加到缓存区： 文件目录下打开终端 git add .
+提交缓存区到仓库区： git commit -m "description"
+连接测试：ssh -T git@github.com
+push到远程仓库：git push origin master 【第一个是远程仓库url的别名，第二个是branch名】
