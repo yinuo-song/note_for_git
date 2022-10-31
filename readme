@@ -5,7 +5,7 @@
 2.在github上右上角手动创建远程仓库
 3.将远程仓库和本地仓库链接：git remote add origin https://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@github.com/yinuo-song/note_for_movebase.git
 【origin：url的别名，可以改；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是github的token（可以在setting里申请）；repositoryname是想要链接的远程仓库的名字】
-
+new token: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
 
 ##更新git信息：
 ====================
