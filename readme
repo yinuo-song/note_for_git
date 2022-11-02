@@ -3,15 +3,15 @@
 
 1.在想要上传的项目根目录下打开终端，初始化git: git init
 2.在github上右上角手动创建远程仓库
-3.将远程仓库和本地仓库链接：git remote add origin https://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@github.com/yinuo-song/note_for_movebase.git
-【origin：url的别名，可以改；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是github的token（可以在setting里申请）；repositoryname是想要链接的远程仓库的名字】
-new token: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
+3.将远程仓库和本地仓库链接：git remote add origin https://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@github.com/yinuo-song/note_for_movebase.git
+【origin：url的别名，可以改；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是github的token（可以在setting里申请）；repositoryname是想要链接的远程仓库的名字】
+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
 
+git remote add origin1 https://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@github.com/yinuo-song/hallwayROS1.0.git
 ##更新git信息：
 ====================
 
 1.把所有代码都添加到缓存区： 添加文件目录下所有文件 git add .
 2.提交缓存区到仓库区： git commit -m "description"（会有加载的info一行一行出现～）
 （3.）连接测试：ssh -T git@github.com
-4.push到远程仓库：git push origin master 【origin：远程仓库url的别名，master：branch名】（会有上传的info一行一行出现～）
-
+4.push到远程仓库：git push origin1 master 【origin：远程仓库url的别名，master：branch名】（会有上传的info一行一行出现～）
