@@ -3,11 +3,11 @@
 
 1.在想要上传的项目根目录下打开终端，初始化git: git init
 2.在github上右上角手动创建远程仓库
-3.将远程仓库和本地仓库链接：git remote add origin https://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@github.com/yinuo-song/note_for_movebase.git
+（3.1）将远程仓库和本地仓库链接：git remote add origin https://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@github.com/yinuo-song/note_for_movebase.git
 【origin：url的别名，可以改；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是github的token（可以在setting里申请）；repositoryname是想要链接的远程仓库的名字】
-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
+（3.2）直接用ssh链接：git remote add origin git@github.com:yinuo-song/hallwayROS.git
 
-git remote add origin1 https://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@github.com/yinuo-song/hallwayROS1.0.git
+
 ##更新git信息：
 ====================
 
@@ -15,3 +15,8 @@ git remote add origin1 https://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@github.c
 2.提交缓存区到仓库区： git commit -m "description"（会有加载的info一行一行出现～）
 （3.）连接测试：ssh -T git@github.com
 4.push到远程仓库：git push origin1 master 【origin：远程仓库url的别名，master：branch名】（会有上传的info一行一行出现～）
+
+
+建议使用ssh，当没有网络的时候也可以push
+或者用vscode里的commit,添加SSH到小窗口，然后pull,push
+私有的仓库不能用token来push啊。。。。
