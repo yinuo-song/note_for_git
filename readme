@@ -14,7 +14,7 @@
 1.把所有代码都添加到缓存区： 添加文件目录下所有文件 git add .
 2.提交缓存区到仓库区： git commit -m "description"（会有加载的info一行一行出现～）
 （3.）连接测试：ssh -T git@github.com
-4.push到远程仓库：git push origin1 master 【origin：远程仓库url的别名，master：branch名】（会有上传的info一行一行出现～）
+4.push到远程仓库：git push origin master 【origin：远程仓库url的别名，master：branch名】（会有上传的info一行一行出现～）
 
 
 建议使用ssh，当没有网络的时候也可以push
