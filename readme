@@ -6,6 +6,7 @@
 （3.1）将远程仓库和本地仓库链接：git remote add origin https://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@github.com/yinuo-song/note_for_movebase.git
 【origin：url的别名，可以改；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是github的token（可以在setting里申请）；repositoryname是想要链接的远程仓库的名字】
 （3.2）直接用ssh链接：git remote add origin git@github.com:yinuo-song/hallwayROS.git
+其实就是 git remote add [URL别名] [要链接的仓库的SSH]
 
 
 ##更新git信息：
