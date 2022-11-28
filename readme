@@ -21,3 +21,7 @@
 建议使用ssh，当没有网络的时候也可以push
 或者用vscode里的commit,添加SSH到小窗口，然后pull,push
 私有的仓库不能用token来push啊。。。。
+
+
+2022-11-28
+debug先看语法啊。。。。。
