@@ -35,3 +35,11 @@ debug mpc.py 474
 
 2024-02-03
 新建仓库
+
+一个bug:当我尝试在movebase.cpp中加入一个subscribe用于接收heatmap时,boost报错如图.
+类似于https://answers.ros.org/question/331365/error-no-match-for-call-to-boost/
+最后发现问题是: callback函数的参数类型写的不对
+::ConstPtr是ROS中常用的数据类型"常量指针",当消息自动生成为代码时,一些类型会被重新定义并使用,比如一下两种转化,完成这种转化才能被boost使用.
+::Ptr---->boost::shared_ptr<MSG>
+::ConstPtr---->boost::shared_ptr<MSG const>
+意义在于:使用常量指针将消息传递到callback里,避免消息复制,这个机制在处理点云/地图等大体量的信息时尤为有价值.
