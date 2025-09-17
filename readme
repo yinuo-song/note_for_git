@@ -43,3 +43,21 @@ debug mpc.py 474
 ::Ptr---->boost::shared_ptr<MSG>
 ::ConstPtr---->boost::shared_ptr<MSG const>
 意义在于:使用常量指针将消息传递到callback里,避免消息复制,这个机制在处理点云/地图等大体量的信息时尤为有价值.
+
+
+2025-09-17
+对git使用的理解：
+# git add . 和git commit -m "description"都是对本地git的操作，会修改git文件夹的“.git”文件，这个文件是隐藏文件夹，可以通过ctrl+h使之出现。
+# 每次commit之后都会在本地（.git）生成一个新的提交记录，可以通过[git log]查看，还可以通过[git branch][git branch -r]查看这个仓库的分支和远程分支。
+# 如果commit的版本不满意，可以回退到上一个版本[git reset HEAD~1]，操作完之后可以[git log]查看现在是什么版本了。
+# git push origin master是将本地的版本上传到 github上去，但是远程的仓库是有大小限制的，一般是2G。
+##记录这次遇到的问题：文件太大，更新时执行到push这一步失败了。
+解决方案：
+退到上一个commit版本[git reset HEAD~1]
+把太大的文件移到git文件夹外面
+重新 add,commit，push->成功
+
+
+
+
+
