@@ -57,6 +57,34 @@ debug mpc.py 474
 把太大的文件移到git文件夹外面
 重新 add,commit，push->成功
 
+创建CONDA环境：
+$ conda create -n rl python=3.10
+$ conda activate rl
+$ conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+$ pip install gym>=0.26
+
+note:
+conda list | grep torch
+```
+python
+import torch
+torch.cuda.is_available()
+返回true
+```
+
+conda list | grep gym
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
